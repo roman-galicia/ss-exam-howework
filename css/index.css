@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+h1,
+h2,
+div,
+p,
+nav,
+header,
+footer,
+main,
+section,
+aside,
+container {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-color: black;
+    --alternative-color: green;
+}
+
+body {
+    max-width: 1140px;
+    margin: auto;
+    background-color: #c9ef7c;
+}
+
+
+@media (min-width: 580px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header .header-contact {
+        flex: 1;
+        justify-content: space-around;
+    }
+}
+
+header .logo-text {
+    text-decoration: none;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 10px;
+}
+
+header .header-contact {
+    font-family: 'Roboto';
+    text-align: center;
+    margin: 20px 10px;
+    font-size: 1, 5rem;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+header .header-contact .header-phone a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+header .header-contact .header-mail a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+main .menu li {
+    display: inline;
+    list-style-type: none;
+}
+
+main .menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    flex-wrap: wrap;
+}
+
+main .menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--alternative-color);
+}
+
+main .menu li a:hover {
+    text-decoration: underline;
+}
+
+main .carousel {
+    max-width: auto;
+    max-height: 300;
+    float: left;
+}
+
+main .carousel-text-headline {
+    border-color: medium solid black;
+}
+
+main .about-us {
+    text-align: center;
+}
+
+main .about-us .headline-about-us {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+main .best-sellers {
+    float: left;
+    text-align: center;
+    margin: 10px auto;
+}
+
+main .best-sellers .headline-best-sellers {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+main. .advantages .advantages-card {
+    display: inline;
+}
+
+.main-border {
+    border-bottom: 2px solid black;
+}
+
+footer .page-row .social-media-row .social-media-list .social-block a {
+    text-decoration: none;
+}
+
+footer .social-media-list li {
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+footer .social-media-block a {
+    color: #000;
+}
+
+footer .header-contact {
+    font-family: 'Roboto';
+    text-align: center;
+    margin: 20px 10px;
+    font-size: 1, 5rem;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+footer .header-contact .header-phone a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+footer .header-contact .header-mail a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+/* here starts shipping page */
+.delivery {
+    display: flex;
+    display: block;
+}
+
+.delivery-headline {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.delivery-picture {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    background-image: url(../img/delivery.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.delivery-headline-div {
+    margin: 10px 0;
+}
+
+.delivery-paragraph {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* here starts about page */
+.who-we-are {
+    display: grid;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.who-we-are-picture,
+.manufacturing-picture {
+    max-width: 100%;
+    margin: 10px 0;
+}
+
+.who-we-are-heading,
+.idea-heading,
+.social-business-heading,
+.shop-headline {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.about-video {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.about-text {
+    display: flex;
+    text-align: center;
+    color: var(--main-color);
+    margin: 10px 0;
+}
+
+.social-respons,
+.delivery-info {
+    border-bottom: 2px solid black;
+}
+
+.partner-form {
+    margin: 10px 0;
+}
+
+.mail-form {
+    border-top: 2px solid black;
+}
+
+.form-text {
+    text-align: justify;
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.form-text-mail-form {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+/* here starts shop page */
+
+.product-card {
+    border: 1px solid black;
+}
+.product-card h3,
+.product-card p {
+    padding: 0 5px;
+}
+
+.product-card img {
+    width: 100%;
+    display: block;
+}
+
+.button-container-shop {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.clock-container {
+    display: flex;
+    justify-content: center;
+    font-size: 1,5rem;
+    margin: 10px 0;
+    border-bottom: 2px solid black;
+}
+.clock-paragraph {
+    margin: 5px 0;
+}
+@media (min-width: 480px) {
+    .product list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
+    .product list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 980px) {
+    .product list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
